@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlay</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="showButton" onclick="display()">Button 1</button>
+    <button class="showButton" onclick="display()">Button 2</button>
+    <button class="showButton" onclick="display()">Button 3</button>
+
+    <div id="box" class="box hidden">
+      <button onclick="undisplay()">X</button>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ullam,
+        sint reiciendis iusto vero nisi assumenda nulla itaque ea. Vel
+        consectetur, quia doloremque repellat sequi itaque inventore soluta
+        aspernatur mollitia.
+      </p>
+    </div>
+    <div id="overlay" class="overlay hidden" onclick="undisplay()"></div>
+  </body>
+</html>
+<script src="script.js"></script>
